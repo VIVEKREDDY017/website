@@ -1,0 +1,143 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #343a40;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color:  white;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.links a.active {
+    border-bottom: 2px solid #077b32;
+}
+
+.links a:hover {
+    color: #077b32;
+}
+
+/* About Section */
+.about-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.about-content img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-content img:hover {
+    transform: scale(1.05);
+}
+
+.about-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+ul {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 600px;
+    list-style: none;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #077b32;
+    font-weight: bold;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        margin-top: 10px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+        line-height: 1.8
+    }
+
+    ul {
+        text-align: center;
+    }
+}

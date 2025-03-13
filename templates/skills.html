@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills - Vivek Reddy Gudi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="static/skills.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                VIVEK_REDDY <span>GUDI</span>
+            </div>
+            <div class="links">
+                <a href="{{ url_for('index') }}"><b>Home</b></a>
+                <a href="{{ url_for('about') }}"><b>About</b></a>
+                <a href="{{ url_for('skills') }}" class="active"><b>Skills</b></a>
+                <a href="{{ url_for('contact') }}"><b>Contact</b></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="skills-section">
+        <h1 class="section-title" data-aos="fade-up" data-aos-duration="1500">My Skills</h1>
+
+        <div class="skills-container">
+            <div class="skill-card" data-aos="fade-right" data-aos-duration="1500">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;">90%</div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-aos="fade-left" data-aos-duration="1500">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;">85%</div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-aos="fade-right" data-aos-duration="1500">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;">80%</div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-aos="fade-left" data-aos-duration="1500">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python (Flask)</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;">85%</div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-aos="fade-right" data-aos-duration="1500">
+                <i class="fa-brands fa-docker"></i>
+                <h3>Docker</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;">75%</div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-aos="fade-left" data-aos-duration="1500">
+                <i class="fa-brands fa-aws"></i>
+                <h3>AWS</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;">70%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="static/script.js"></script>
+
+</body>
+</html>

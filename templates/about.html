@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>About Us</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
@@ -18,5 +19,50 @@
         <h2>About This Website</h2>
         <p>This website was created using Flask to demonstrate a simple website structure.</p>
     </main>
+=======
+    <title>About Me - Vivek Reddy Gudi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="static/about.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">VIVEK_REDDY <span>GUDI</span></div>
+            <div class="links">
+                <a href="{{ url_for('index') }}"><b>Home</b></a>
+                <a href="{{ url_for('about') }}" class="active"><b>About</b></a>
+                <a href="{{ url_for('skills') }}"><b>Skills</b></a>
+                <a href="{{ url_for('contact') }}"><b>Contact</b></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h1>About Me</h1>
+        <p>Hello! I am <b>Vivek Reddy Gudi</b>, a passionate backend developer and AWS DevOps enthusiast.</p>
+        
+        <div class="about-content">
+            <img src="static/vivek_pp.jpg" alt="Vivek Reddy Gudi">
+            <div class="about-text">
+                <p>I specialize in backend development using Flask, Python, and cloud technologies like AWS. I love creating scalable and efficient applications. Apart from coding, I enjoy working on DevOps tools like Docker and AWS services.</p>
+                <p>With hands-on experience in **web development and deployment**, I am always eager to learn and improve my skills.</p>
+            </div>
+        </div>
+
+        <h2>My Experience</h2>
+        <ul>
+            <li><b>Intern at QuantumQuill Infotech Pvt Ltd</b> - Working on Flask, HTML, CSS, and JavaScript.</li>
+            <li>Experienced in **AWS deployment, EC2, and Docker**.</li>
+            <li>Building a **Photo Studio Booking Website (Vamika Studio)**.</li>
+        </ul>
+        
+        <h2>Contact Me</h2>
+        <p>If you'd like to collaborate or hire me, feel free to reach out via the <a href="{{ url_for('contact') }}">Contact</a> page.</p>
+    </section>
+
+    <script src="static/script.js"></script>
+>>>>>>> bebcde6 (Initial commit for website)
 </body>
 </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | VIVEK_REDDY Portfolio</title>
+    <link rel="stylesheet" href="static/contact.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- ✅ Corrected Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">VIVEK_REDDY <span>GUDI</span></div>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="openMenu()"></i>
+        </div>
+
+        <!-- ✅ Mobile Menu -->
+        <div class="dropdown">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <i class="fa-solid fa-xmark cancel" onclick="closeMenu()"></i>
+        </div>
+    </nav>
+
+    <!-- ✅ Contact Form -->
+    <section class="contact">
+        <div class="contact-box">
+            <h2>Contact Me</h2>
+            <p>If you have any queries, feel free to reach out!</p>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" required></textarea>
+
+                <button type="submit" class="send-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="contact.js"></script>
+
+</body>
+</html>
